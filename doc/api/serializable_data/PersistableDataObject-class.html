@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the PersistableDataObject class from the serializable_data library, for the Dart programming language.">
+  <title>PersistableDataObject class - serializable_data library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">serializable_data</a></li>
+    <li><a href="../serializable_data/serializable_data-library.html">serializable_data</a></li>
+    <li class="self-crumb">PersistableDataObject abstract class</li>
+  </ol>
+  <div class="self-name">PersistableDataObject</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">PersistableDataObject</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>A <a href="../serializable_data/DataObject-class.html">DataObject</a> that is designed to be persisted in a json database</p>
+<p>It requires a type and generates and sets an id</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="../serializable_data/DataObject-class.html">DataObject</a></li>
+          <li>PersistableDataObject</li>
+        </ul></dd>
+
+
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../serializable_data/DataObjectRelationship-class.html">DataObjectRelationship</a></li>
+        </ul></dd>
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="PersistableDataObject" class="callable">
+          <span class="name"><a href="../serializable_data/PersistableDataObject/PersistableDataObject.html">PersistableDataObject</a></span><span class="signature">(<span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span><span class="parameter" id="-param-data">{<span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">data</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="data" class="property inherited">
+  <span class="name"><a href="../serializable_data/DataObject/data.html">data</a></span>
+  <span class="signature">&#8594; Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span> 
+
+</dt>
+<dd class="inherited">
+  Returns a copy of the Map containing the data in this DataObject 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="dbReference" class="property">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/dbReference.html">dbReference</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+   
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="fields" class="property inherited">
+  <span class="name"><a href="../serializable_data/DataObject/fields.html">fields</a></span>
+  <span class="signature">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+
+</dt>
+<dd class="inherited">
+  Used to provide a list of the fields used by this DataObject <a href="../serializable_data/DataObject/fields.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="../serializable_data/DataObject/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; int</span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="../serializable_data/DataObject/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="id" class="property">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/id.html">id</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+   
+  <div class="features">read-only</div>
+
+</dd>
+
+        <dt id="immutable" class="property inherited">
+  <span class="name"><a href="../serializable_data/DataObject/immutable.html">immutable</a></span>
+  <span class="signature">&#8594; bool</span> 
+
+</dt>
+<dd class="inherited">
+  If true then the <a href="../serializable_data/PersistableDataObject/set.html">set</a> method throws an exception
+If false (or null) then the <a href="../serializable_data/PersistableDataObject/set.html">set</a> method continues as normal 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="isOnDatabase" class="property">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/isOnDatabase.html">isOnDatabase</a></span>
+  <span class="signature">&#8596; bool</span> 
+
+</dt>
+<dd>
+  Should be marked as true if this record is read from the database <a href="../serializable_data/PersistableDataObject/isOnDatabase.html">[...]</a>
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="isUpdated" class="property">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/isUpdated.html">isUpdated</a></span>
+  <span class="signature">&#8596; bool</span> 
+
+</dt>
+<dd>
+  marked as true if the data on this object is updated 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="../serializable_data/DataObject/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; Type</span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="type" class="property">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/type.html">type</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+  The type of the data - used to determine the id of the object in the database 
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addListener" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/addListener.html">addListener</a></span><span class="signature">(<wbr><span class="parameter" id="addListener-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="addListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Adds a listener <code>Function</code> that is called whenever the field corresponding to the
+<code>label</code> is updated. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="get" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/get.html">get</a></span><span class="signature">(<wbr><span class="parameter" id="get-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Get the data corresponding to the label from the DataObject 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="merge" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/merge.html">merge</a></span><span class="signature">(<wbr><span class="parameter" id="merge-param-map"><span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">map</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merge the data from the map into this <a href="../serializable_data/DataObject-class.html">DataObject</a> 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="../serializable_data/DataObject/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="notify" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/notify.html">notify</a></span><span class="signature">(<wbr><span class="parameter" id="notify-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Notify listeners of a change to this element in the data object 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="removeListener" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/removeListener.html">removeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeListener-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="removeListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Remove a listener that has been previously added. If the listener is not found the method
+does nothing. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="set" class="callable">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/set.html">set</a></span><span class="signature">(<wbr><span class="parameter" id="set-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span>, </span><span class="parameter" id="set-param-value"><span class="type-annotation">dynamic</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Set the data corresponding to the label with the value <a href="../serializable_data/PersistableDataObject/set.html">[...]</a>
+  <div class="features">override</div>
+
+</dd>
+
+        <dt id="toJson" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/toJson.html">toJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Convert the data in the <code>_map</code> to a Json Object 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="../serializable_data/DataObject/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="validate" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/validate.html">validate</a></span><span class="signature">(<wbr><span class="parameter" id="validate-param-fields">{<span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span>?</span> <span class="parameter-name">fields</span>}</span>)
+    <span class="returntype parameter">&#8594; String?</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Used to validate the data in this DataObject <a href="../serializable_data/DataObject/validate.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="../serializable_data/DataObject/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="../serializable_data/DataObject/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="buildDBReference" class="callable">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/buildDBReference.html">buildDBReference</a></span><span class="signature">(<wbr><span class="parameter" id="buildDBReference-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span><span class="parameter" id="buildDBReference-param-id"><span class="type-annotation">String</span> <span class="parameter-name">id</span></span>)
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
+  
+
+</dt>
+<dd>
+   
+  
+
+</dd>
+
+        <dt id="clone" class="callable">
+  <span class="name"><a href="../serializable_data/PersistableDataObject/clone.html">clone</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="../serializable_data/PersistableDataObject-class.html">PersistableDataObject</a></span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="clone-param-from"><span class="type-annotation"><a href="../serializable_data/PersistableDataObject-class.html">PersistableDataObject</a>?</span> <span class="parameter-name">from</span></span>)
+    <span class="returntype parameter">&#8594; T?</span>
+  </span>
+  
+
+</dt>
+<dd>
+   
+  
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="idLabel" class="constant">
+  <span class="name "><a href="../serializable_data/PersistableDataObject/idLabel-constant.html">idLabel</a></span>
+  <span class="signature">&#8594; const String</span>
+  
+
+</dt>
+<dd>
+  The label used for the id 
+  
+
+  <div>
+    <span class="signature"><code>&#39;id&#39;</code></span>
+  </div>
+</dd>
+
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">serializable_data</a></li>
+  <li><a href="../serializable_data/serializable_data-library.html">serializable_data</a></li>
+  <li class="self-crumb">PersistableDataObject abstract class</li>
+</ol>
+
+
+    <h5>serializable_data library</h5>
+    <ol>
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#classes">Classes</a></li>
+  <li><a href="../serializable_data/Address-class.html">Address</a></li>
+  <li><a href="../serializable_data/Calendar-class.html">Calendar</a></li>
+  <li><a href="../serializable_data/CombinedDataObject-class.html">CombinedDataObject</a></li>
+  <li><a href="../serializable_data/DatabaseReader-class.html">DatabaseReader</a></li>
+  <li><a href="../serializable_data/DatabaseUpdater-class.html">DatabaseUpdater</a></li>
+  <li><a href="../serializable_data/DataObject-class.html">DataObject</a></li>
+  <li><a href="../serializable_data/DataObjectRelationship-class.html">DataObjectRelationship</a></li>
+  <li><a href="../serializable_data/DataService-class.html">DataService</a></li>
+  <li><a href="../serializable_data/DataSpecification-class.html">DataSpecification</a></li>
+  <li><a href="../serializable_data/DataStateManager-class.html">DataStateManager</a></li>
+  <li><a href="../serializable_data/ListEntry-class.html">ListEntry</a></li>
+  <li><a href="../serializable_data/PersistableDataObject-class.html">PersistableDataObject</a></li>
+  <li><a href="../serializable_data/RelationshipSpecification-class.html">RelationshipSpecification</a></li>
+
+
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#constants">Constants</a></li>
+  <li><a href="../serializable_data/millisecondsPerDay-constant.html">millisecondsPerDay</a></li>
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#properties">Properties</a></li>
+  <li><a href="../serializable_data/base.html">base</a></li>
+  <li><a href="../serializable_data/calendar.html">calendar</a></li>
+  <li><a href="../serializable_data/defaultDataText.html">defaultDataText</a></li>
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#functions">Functions</a></li>
+  <li><a href="../serializable_data/atLeastNCharacters.html">atLeastNCharacters</a></li>
+  <li><a href="../serializable_data/atLeastOne.html">atLeastOne</a></li>
+  <li><a href="../serializable_data/bothPresentOrBothAbsent.html">bothPresentOrBothAbsent</a></li>
+  <li><a href="../serializable_data/dateTimeToDDMMYYYY.html">dateTimeToDDMMYYYY</a></li>
+  <li><a href="../serializable_data/ddmmyyyyToDateTime.html">ddmmyyyyToDateTime</a></li>
+  <li><a href="../serializable_data/fromDateTime.html">fromDateTime</a></li>
+  <li><a href="../serializable_data/generateId.html">generateId</a></li>
+  <li><a href="../serializable_data/genericDataSpecification.html">genericDataSpecification</a></li>
+  <li><a href="../serializable_data/isAtLeast18.html">isAtLeast18</a></li>
+  <li><a href="../serializable_data/isCurrent.html">isCurrent</a></li>
+  <li><a href="../serializable_data/mandatory.html">mandatory</a></li>
+  <li><a href="../serializable_data/mandatoryIntegerGTZero.html">mandatoryIntegerGTZero</a></li>
+  <li><a href="../serializable_data/optionalIntegerGTZero.html">optionalIntegerGTZero</a></li>
+  <li><a href="../serializable_data/parse.html">parse</a></li>
+  <li><a href="../serializable_data/parseSingleTextItem.html">parseSingleTextItem</a></li>
+  <li><a href="../serializable_data/parseText.html">parseText</a></li>
+  <li><a href="../serializable_data/registerSerializableDataDependencies.html">registerSerializableDataDependencies</a></li>
+  <li><a href="../serializable_data/theSame.html">theSame</a></li>
+  <li><a href="../serializable_data/toAmount.html">toAmount</a></li>
+  <li><a href="../serializable_data/toDateTime.html">toDateTime</a></li>
+  <li><a href="../serializable_data/toDecimal.html">toDecimal</a></li>
+  <li><a href="../serializable_data/validateCurrencyAmount.html">validateCurrencyAmount</a></li>
+  <li><a href="../serializable_data/validateDDMMYYYY.html">validateDDMMYYYY</a></li>
+  <li><a href="../serializable_data/validateEmail.html">validateEmail</a></li>
+
+
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#exceptions">Exceptions</a></li>
+  <li><a href="../serializable_data/DataObjectException-class.html">DataObjectException</a></li>
+  <li><a href="../serializable_data/DataStateManagerException-class.html">DataStateManagerException</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../serializable_data/PersistableDataObject-class.html#constructors">Constructors</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/PersistableDataObject.html">PersistableDataObject</a></li>
+
+
+    <li class="section-title">
+      <a href="../serializable_data/PersistableDataObject-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="../serializable_data/DataObject/data.html">data</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/dbReference.html">dbReference</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/fields.html">fields</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/hashCode.html">hashCode</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/id.html">id</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/immutable.html">immutable</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/isOnDatabase.html">isOnDatabase</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/isUpdated.html">isUpdated</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/runtimeType.html">runtimeType</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/type.html">type</a></li>
+
+    <li class="section-title"><a href="../serializable_data/PersistableDataObject-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/addListener.html">addListener</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/get.html">get</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/merge.html">merge</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/notify.html">notify</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/removeListener.html">removeListener</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/set.html">set</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/toJson.html">toJson</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/toString.html">toString</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/validate.html">validate</a></li>
+
+    <li class="section-title inherited"><a href="../serializable_data/PersistableDataObject-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../serializable_data/DataObject/operator_equals.html">operator ==</a></li>
+
+
+
+    <li class="section-title"><a href="../serializable_data/PersistableDataObject-class.html#static-methods">Static methods</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/buildDBReference.html">buildDBReference</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/clone.html">clone</a></li>
+
+    <li class="section-title"><a href="../serializable_data/PersistableDataObject-class.html#constants">Constants</a></li>
+    <li><a href="../serializable_data/PersistableDataObject/idLabel-constant.html">idLabel</a></li>
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    serializable_data
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

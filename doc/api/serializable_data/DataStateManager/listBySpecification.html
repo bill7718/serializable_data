@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the listBySpecification method from the DataStateManager class, for the Dart programming language.">
+  <title>listBySpecification method - DataStateManager class - serializable_data library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">serializable_data</a></li>
+    <li><a href="../../serializable_data/serializable_data-library.html">serializable_data</a></li>
+    <li><a href="../../serializable_data/DataStateManager-class.html">DataStateManager</a></li>
+    <li class="self-crumb">listBySpecification&lt;<wbr><span class="type-parameter">T extends PersistableDataObject</span>&gt; method</li>
+  </ol>
+  <div class="self-name">listBySpecification</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">listBySpecification&lt;<wbr><span class="type-parameter">T extends PersistableDataObject</span>&gt;</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype">Future<span class="signature">&lt;<wbr><span class="type-parameter">List<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+<span class="name ">listBySpecification</span>&lt;<wbr><span class="type-parameter">T extends PersistableDataObject</span>&gt;(<wbr><ol class="parameter-list"><li><span class="parameter" id="listBySpecification-param-spec"><span class="type-annotation">String</span> <span class="parameter-name">spec</span>, </span></li>
+<li><span class="parameter" id="listBySpecification-param-fromId"><span class="type-annotation">String</span> <span class="parameter-name">fromId</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Returns a list of the child objects related to the provided <code>fromId</code> with the relationship type as <code>spec</code></p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;List&lt;T&gt;&gt; listBySpecification&lt;T extends PersistableDataObject&gt;(String spec, String fromId) async {
+  var c = Completer&lt;List&lt;T&gt;&gt;();
+
+  try {
+    await readRelationships(fromId);
+    var matches = await _matchRelationships(fromId: fromId, type: spec);
+    if (matches.isEmpty) {
+      c.complete(&lt;T&gt;[]);
+    } else {
+      var response = &lt;T&gt;[];
+      for (var item in matches) {
+        var r = PersistableDataObject.clone&lt;T&gt;(data[item.toId]);
+        r ??= await reader.get&lt;T&gt;(item.toId!);
+        response.add(r);
+      }
+      c.complete(response);
+    }
+  } catch (ex, st) {
+    c.completeError(DataStateManagerException(&#39;$spec $fromId ${ex.toString()}&#39;), st);
+  }
+
+  return c.future;
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">serializable_data</a></li>
+  <li><a href="../../serializable_data/serializable_data-library.html">serializable_data</a></li>
+  <li><a href="../../serializable_data/DataStateManager-class.html">DataStateManager</a></li>
+  <li class="self-crumb">listBySpecification&lt;<wbr><span class="type-parameter">T extends PersistableDataObject</span>&gt; method</li>
+</ol>
+
+
+    <h5>DataStateManager class</h5>
+    <ol>
+
+    <li class="section-title"><a href="../../serializable_data/DataStateManager-class.html#constructors">Constructors</a></li>
+    <li><a href="../../serializable_data/DataStateManager/DataStateManager.html">DataStateManager</a></li>
+
+
+    <li class="section-title">
+      <a href="../../serializable_data/DataStateManager-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../serializable_data/DataStateManager/data.html">data</a></li>
+    <li><a href="../../serializable_data/DataStateManager/dropped.html">dropped</a></li>
+    <li><a href="../../serializable_data/DataStateManager/fromIds.html">fromIds</a></li>
+    <li class="inherited"><a href="../../serializable_data/DataStateManager/hashCode.html">hashCode</a></li>
+    <li><a href="../../serializable_data/DataStateManager/reader.html">reader</a></li>
+    <li><a href="../../serializable_data/DataStateManager/relationships.html">relationships</a></li>
+    <li class="inherited"><a href="../../serializable_data/DataStateManager/runtimeType.html">runtimeType</a></li>
+    <li><a href="../../serializable_data/DataStateManager/specifications.html">specifications</a></li>
+    <li><a href="../../serializable_data/DataStateManager/updater.html">updater</a></li>
+
+    <li class="section-title"><a href="../../serializable_data/DataStateManager-class.html#instance-methods">Methods</a></li>
+    <li><a href="../../serializable_data/DataStateManager/drop.html">drop</a></li>
+    <li><a href="../../serializable_data/DataStateManager/get.html">get</a></li>
+    <li><a href="../../serializable_data/DataStateManager/getOrCreate.html">getOrCreate</a></li>
+    <li><a href="../../serializable_data/DataStateManager/getOrCreateBySpecification.html">getOrCreateBySpecification</a></li>
+    <li><a href="../../serializable_data/DataStateManager/getOrCreateRelationshipBySpecification.html">getOrCreateRelationshipBySpecification</a></li>
+    <li><a href="../../serializable_data/DataStateManager/listBySpecification.html">listBySpecification</a></li>
+    <li class="inherited"><a href="../../serializable_data/DataStateManager/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../../serializable_data/DataStateManager/readRelationships.html">readRelationships</a></li>
+    <li><a href="../../serializable_data/DataStateManager/save.html">save</a></li>
+    <li><a href="../../serializable_data/DataStateManager/setState.html">setState</a></li>
+    <li><a href="../../serializable_data/DataStateManager/synchronizeList.html">synchronizeList</a></li>
+    <li class="inherited"><a href="../../serializable_data/DataStateManager/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../../serializable_data/DataStateManager-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../../serializable_data/DataStateManager/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    serializable_data
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

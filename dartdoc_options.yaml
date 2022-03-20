@@ -1,0 +1,20 @@
+
+dartdoc:
+  ignore:
+    - broken-link
+    - missing-from-search-index
+    - unresolved-export
+    - unresolved-doc-reference
+    - non-canonical-found
+    - unknown-file
+
+  include:
+    - serializable_data
+
+
+
+
+
+
+
+

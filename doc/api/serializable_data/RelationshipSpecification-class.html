@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the RelationshipSpecification class from the serializable_data library, for the Dart programming language.">
+  <title>RelationshipSpecification class - serializable_data library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">serializable_data</a></li>
+    <li><a href="../serializable_data/serializable_data-library.html">serializable_data</a></li>
+    <li class="self-crumb">RelationshipSpecification class</li>
+  </ol>
+  <div class="self-name">RelationshipSpecification</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">RelationshipSpecification</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Describes the relationship between 2 objects</p>
+<p>For example if the relationship was between a teacher and students with only male students to be allowed then the specification might be
+<code>from : Teacher,   to: Student,   type: classMember,   filterLabel : gender,   filterValue : male,   descriptionLabel: name,   relationshipLabel: maleStudent</code></p>
+</section>
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="RelationshipSpecification" class="callable">
+          <span class="name"><a href="../serializable_data/RelationshipSpecification/RelationshipSpecification.html">RelationshipSpecification</a></span><span class="signature">(<span class="parameter" id="-param-from"><span class="type-annotation">String</span> <span class="parameter-name">from</span>, </span><span class="parameter" id="-param-to"><span class="type-annotation">String</span> <span class="parameter-name">to</span>, </span><span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span><span class="parameter" id="-param-filterLabel">{<span class="type-annotation">String?</span> <span class="parameter-name">filterLabel</span>, </span><span class="parameter" id="-param-filterValue"><span class="type-annotation">String?</span> <span class="parameter-name">filterValue</span>, </span><span class="parameter" id="-param-descriptionLabel"><span class="type-annotation">String?</span> <span class="parameter-name">descriptionLabel</span>, </span><span class="parameter" id="-param-relationshipLabel"><span class="type-annotation">String?</span> <span class="parameter-name">relationshipLabel</span>, </span><span class="parameter" id="-param-isSequenced"><span class="type-annotation">bool</span> <span class="parameter-name">isSequenced</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-mandatory"><span class="type-annotation">int</span> <span class="parameter-name">mandatory</span> = <span class="default-value">isOptional</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="descriptionLabel" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/descriptionLabel.html">descriptionLabel</a></span>
+  <span class="signature">&#8594; String?</span> 
+
+</dt>
+<dd>
+  Where the relationship is selected on a screen this is the label in the dataobject of the description to be shown 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="filterLabel" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/filterLabel.html">filterLabel</a></span>
+  <span class="signature">&#8594; String?</span> 
+
+</dt>
+<dd>
+  Where the relationship is based on a filtered list of items in the to object this is the fieldLabel which is filtered 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="filterValue" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/filterValue.html">filterValue</a></span>
+  <span class="signature">&#8594; String?</span> 
+
+</dt>
+<dd>
+  Where the relationship is based on a filtered list of items in the to object this is the fieldValue which is filtered 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="from" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/from.html">from</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+  The object type the relationship goes from 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; int</span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="../serializable_data/RelationshipSpecification/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="isSequenced" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/isSequenced.html">isSequenced</a></span>
+  <span class="signature">&#8594; bool</span> 
+
+</dt>
+<dd>
+  If true then there are many items relationships of this type and they have an order e.g. applicants for a loan 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="mandatory" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/mandatory.html">mandatory</a></span>
+  <span class="signature">&#8594; int</span> 
+
+</dt>
+<dd>
+  Specifies whether this relationship must exist. Takes 3 values <a href="../serializable_data/RelationshipSpecification/mandatory.html">[...]</a>
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="relationshipLabel" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/relationshipLabel.html">relationshipLabel</a></span>
+  <span class="signature">&#8594; String?</span> 
+
+</dt>
+<dd>
+  This is the label to be shown on the page 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; Type</span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="to" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/to.html">to</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+  The object type the relationship goes to 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="type" class="property">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/type.html">type</a></span>
+  <span class="signature">&#8594; String</span> 
+
+</dt>
+<dd>
+  Describes the type of the relationship 
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="../serializable_data/RelationshipSpecification/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="../serializable_data/RelationshipSpecification/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="../serializable_data/RelationshipSpecification/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="../serializable_data/RelationshipSpecification/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="isMandatory" class="constant">
+  <span class="name "><a href="../serializable_data/RelationshipSpecification/isMandatory-constant.html">isMandatory</a></span>
+  <span class="signature">&#8594; const int</span>
+  
+
+</dt>
+<dd>
+   
+  
+
+  <div>
+    <span class="signature"><code>1</code></span>
+  </div>
+</dd>
+
+        <dt id="isOptional" class="constant">
+  <span class="name "><a href="../serializable_data/RelationshipSpecification/isOptional-constant.html">isOptional</a></span>
+  <span class="signature">&#8594; const int</span>
+  
+
+</dt>
+<dd>
+   
+  
+
+  <div>
+    <span class="signature"><code>0</code></span>
+  </div>
+</dd>
+
+        <dt id="mandatoryButMayBeEmpty" class="constant">
+  <span class="name "><a href="../serializable_data/RelationshipSpecification/mandatoryButMayBeEmpty-constant.html">mandatoryButMayBeEmpty</a></span>
+  <span class="signature">&#8594; const int</span>
+  
+
+</dt>
+<dd>
+   
+  
+
+  <div>
+    <span class="signature"><code>2</code></span>
+  </div>
+</dd>
+
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">serializable_data</a></li>
+  <li><a href="../serializable_data/serializable_data-library.html">serializable_data</a></li>
+  <li class="self-crumb">RelationshipSpecification class</li>
+</ol>
+
+
+    <h5>serializable_data library</h5>
+    <ol>
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#classes">Classes</a></li>
+  <li><a href="../serializable_data/Address-class.html">Address</a></li>
+  <li><a href="../serializable_data/Calendar-class.html">Calendar</a></li>
+  <li><a href="../serializable_data/CombinedDataObject-class.html">CombinedDataObject</a></li>
+  <li><a href="../serializable_data/DatabaseReader-class.html">DatabaseReader</a></li>
+  <li><a href="../serializable_data/DatabaseUpdater-class.html">DatabaseUpdater</a></li>
+  <li><a href="../serializable_data/DataObject-class.html">DataObject</a></li>
+  <li><a href="../serializable_data/DataObjectRelationship-class.html">DataObjectRelationship</a></li>
+  <li><a href="../serializable_data/DataService-class.html">DataService</a></li>
+  <li><a href="../serializable_data/DataSpecification-class.html">DataSpecification</a></li>
+  <li><a href="../serializable_data/DataStateManager-class.html">DataStateManager</a></li>
+  <li><a href="../serializable_data/ListEntry-class.html">ListEntry</a></li>
+  <li><a href="../serializable_data/PersistableDataObject-class.html">PersistableDataObject</a></li>
+  <li><a href="../serializable_data/RelationshipSpecification-class.html">RelationshipSpecification</a></li>
+
+
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#constants">Constants</a></li>
+  <li><a href="../serializable_data/millisecondsPerDay-constant.html">millisecondsPerDay</a></li>
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#properties">Properties</a></li>
+  <li><a href="../serializable_data/base.html">base</a></li>
+  <li><a href="../serializable_data/calendar.html">calendar</a></li>
+  <li><a href="../serializable_data/defaultDataText.html">defaultDataText</a></li>
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#functions">Functions</a></li>
+  <li><a href="../serializable_data/atLeastNCharacters.html">atLeastNCharacters</a></li>
+  <li><a href="../serializable_data/atLeastOne.html">atLeastOne</a></li>
+  <li><a href="../serializable_data/bothPresentOrBothAbsent.html">bothPresentOrBothAbsent</a></li>
+  <li><a href="../serializable_data/dateTimeToDDMMYYYY.html">dateTimeToDDMMYYYY</a></li>
+  <li><a href="../serializable_data/ddmmyyyyToDateTime.html">ddmmyyyyToDateTime</a></li>
+  <li><a href="../serializable_data/fromDateTime.html">fromDateTime</a></li>
+  <li><a href="../serializable_data/generateId.html">generateId</a></li>
+  <li><a href="../serializable_data/genericDataSpecification.html">genericDataSpecification</a></li>
+  <li><a href="../serializable_data/isAtLeast18.html">isAtLeast18</a></li>
+  <li><a href="../serializable_data/isCurrent.html">isCurrent</a></li>
+  <li><a href="../serializable_data/mandatory.html">mandatory</a></li>
+  <li><a href="../serializable_data/mandatoryIntegerGTZero.html">mandatoryIntegerGTZero</a></li>
+  <li><a href="../serializable_data/optionalIntegerGTZero.html">optionalIntegerGTZero</a></li>
+  <li><a href="../serializable_data/parse.html">parse</a></li>
+  <li><a href="../serializable_data/parseSingleTextItem.html">parseSingleTextItem</a></li>
+  <li><a href="../serializable_data/parseText.html">parseText</a></li>
+  <li><a href="../serializable_data/registerSerializableDataDependencies.html">registerSerializableDataDependencies</a></li>
+  <li><a href="../serializable_data/theSame.html">theSame</a></li>
+  <li><a href="../serializable_data/toAmount.html">toAmount</a></li>
+  <li><a href="../serializable_data/toDateTime.html">toDateTime</a></li>
+  <li><a href="../serializable_data/toDecimal.html">toDecimal</a></li>
+  <li><a href="../serializable_data/validateCurrencyAmount.html">validateCurrencyAmount</a></li>
+  <li><a href="../serializable_data/validateDDMMYYYY.html">validateDDMMYYYY</a></li>
+  <li><a href="../serializable_data/validateEmail.html">validateEmail</a></li>
+
+
+
+  <li class="section-title"><a href="../serializable_data/serializable_data-library.html#exceptions">Exceptions</a></li>
+  <li><a href="../serializable_data/DataObjectException-class.html">DataObjectException</a></li>
+  <li><a href="../serializable_data/DataStateManagerException-class.html">DataStateManagerException</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../serializable_data/RelationshipSpecification-class.html#constructors">Constructors</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/RelationshipSpecification.html">RelationshipSpecification</a></li>
+
+
+    <li class="section-title">
+      <a href="../serializable_data/RelationshipSpecification-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../serializable_data/RelationshipSpecification/descriptionLabel.html">descriptionLabel</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/filterLabel.html">filterLabel</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/filterValue.html">filterValue</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/from.html">from</a></li>
+    <li class="inherited"><a href="../serializable_data/RelationshipSpecification/hashCode.html">hashCode</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/isSequenced.html">isSequenced</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/mandatory.html">mandatory</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/relationshipLabel.html">relationshipLabel</a></li>
+    <li class="inherited"><a href="../serializable_data/RelationshipSpecification/runtimeType.html">runtimeType</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/to.html">to</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/type.html">type</a></li>
+
+    <li class="section-title inherited"><a href="../serializable_data/RelationshipSpecification-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../serializable_data/RelationshipSpecification/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../serializable_data/RelationshipSpecification/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../serializable_data/RelationshipSpecification-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../serializable_data/RelationshipSpecification/operator_equals.html">operator ==</a></li>
+
+
+
+
+    <li class="section-title"><a href="../serializable_data/RelationshipSpecification-class.html#constants">Constants</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/isMandatory-constant.html">isMandatory</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/isOptional-constant.html">isOptional</a></li>
+    <li><a href="../serializable_data/RelationshipSpecification/mandatoryButMayBeEmpty-constant.html">mandatoryButMayBeEmpty</a></li>
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    serializable_data
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

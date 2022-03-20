@@ -1,0 +1,22 @@
+{
+  "name": "loan_data",
+  "description": "General Npm",
+  "scripts": {
+    "upgrade_dartdoc": "pub global activate dartdoc",
+    "test": "flutter test test/all_test.dart --coverage",
+    "doc": "dartdoc -q",
+    "doc_and_show" : "dartdoc -q && npm run show_doc",
+    "show_doc": "dhttpd --path doc/api",
+    "all": "npm run test && npm run show_coverage  && npm run doc && npm run show_doc",
+    "part": "npm run test && npm run show_coverage",
+    "show_coverage": "dart run test/show_coverage.dart"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "build/node/index.dart.js",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0"
+  },
+  "private": true
+}
