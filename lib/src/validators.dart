@@ -47,9 +47,9 @@ bool optionalIntegerGTZero(dynamic d) {
 }
 
 ///
-/// Returns true if [d] is not null, false if is it null
+/// Returns true if [d] contains a value otherwise false
 ///
-bool mandatory(dynamic d) => d == null ? false : true;
+bool mandatory(dynamic d) => (d ?? '').toString().isEmpty ? false : true;
 
 ///
 /// Returns true if
