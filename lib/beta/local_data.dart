@@ -5,7 +5,7 @@ import 'dart:io';
 import 'package:serializable_data/serializable_data.dart';
 import 'dart:async';
 import 'dart:convert';
-import 'package:pretty_json/pretty_json.dart';
+
 
 
 class LocalData  implements DataService {
@@ -40,7 +40,7 @@ class LocalData  implements DataService {
     _setByReference(ref, m, (_) {
       var json = const JsonEncoder().convert(_cache);
 
-      data.writeAsStringSync(prettyJson(_cache));
+      data.writeAsStringSync(json);
       c.complete();
     });
 
