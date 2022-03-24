@@ -1,8 +1,7 @@
-import 'dart:async';
-import 'dart:convert';
+
 import 'dart:math';
 import '../serializable_data.dart';
-import 'package:crypto/crypto.dart';
+
 ///
 /// Generates an id randomly
 ///
@@ -91,16 +90,5 @@ String parseSingleTextItem(String text, DataObject data, {int start = 0 }) {
 
 }
 
-Future<String> toSHA256(String input) async {
 
-  var c = Completer<String>();
-  Hash hasher = sha256;
-
-  var data = Utf8Encoder().convert(input);
-
-  var response = hasher.convert(data);
-  c.complete(response.toString());
-
-  return c.future;
-}
 

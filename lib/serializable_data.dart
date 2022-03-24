@@ -20,3 +20,6 @@ export 'src/data_list_getter.dart';
 
 export 'beta/data_specification_provider.dart';
 export 'beta/local_data.dart';
+export 'beta/crypto.dart';
+
+

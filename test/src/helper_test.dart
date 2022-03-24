@@ -117,16 +117,6 @@ void main() {
 
       });
     });
-
-    group('Test toSHA256', ()
-    {
-      test('Converting a String to  its SHA256 equivalent works ', () async {
-          var hash = await toSHA256('Hello12341');
-          var hash2 = await toSHA256(hash);
-          //expect(hash.length, 64);
-          print(hash);
-      });
-    });
   });
 }
 
